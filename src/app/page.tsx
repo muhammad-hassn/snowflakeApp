@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { ModeToggle } from "./components/toggle";
 
 
 export default function Home() {
@@ -7,9 +8,10 @@ export default function Home() {
   <div className="sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg  mx-auto">
     <div className="navbar bg-gray-500 rounded-full  text-white">
   <div className="flex-1">
-    <a href="/" className="btn btn-ghost text-xl">DeepSeek Test App</a>
+    <Link href="/" className="btn btn-ghost text-xl">DeepSeek Test App</Link>
   </div>
   <div className="flex-none">
+<ModeToggle/>
 
     <Button>
      <Link href="/login">Login</Link>
